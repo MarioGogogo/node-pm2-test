@@ -1,0 +1,27 @@
+{
+  "apps":{
+    "name":"BBSWeb",
+    "script":"app.js",
+    "env":{
+      "COMMON_VARIABLE":"true"
+    },
+    "env_production":{
+      "NODE_ENV":"production"
+    }
+  },
+  "deploy":{
+    "production":{
+      "user":"chan",
+      "host":["120.27.220.173"],
+      "port": "22",
+      "ref":"origin/master",
+      "repo":"https://github.com/MarioGogogo/node-pm2-test.git",
+      "path":"/home/chan/test/production",
+      "ssh_options":"StrictHostKeyChecking=no",
+      "pre-deploy-local": "echo '编译成功 是否上线！'",
+      "env":{
+        "NODE_ENV":"production"
+      }
+    }
+  }
+}
