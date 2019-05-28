@@ -1,6 +1,6 @@
 {
   "apps":{
-    "name":"BBSWeb",
+    "name":"bbsweb",
     "script":"app.js",
     "env":{
       "COMMON_VARIABLE":"true"
